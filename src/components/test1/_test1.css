@@ -1,0 +1,299 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--primary);
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+}
+
+:root {
+  --primary: #508ff4;
+  --width: 350px;
+}
+
+.sidebar {
+  width: 370px;
+  height: 100vh;
+  background-color: #fff;
+  padding-top: 5px;
+  transition: linear 0.2s;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background-color: #f5f5f5;
+  border-radius: 2rem;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: #cccccc;
+  border-radius: 2rem;
+}
+
+.sidebar.active {
+  transform: translateX(-100%);
+  transition: linear 0.2s;
+}
+
+.top {
+  height: 50px;
+  width: var(--width);
+  margin: 0px 5px 5px 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.top-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: gray;
+  font-size: 18px;
+}
+
+.top-content i {
+  color: var(--primary);
+  padding: 0px 20px;
+}
+
+.top-content-right i {
+  color: gray;
+  padding: 0px 10px;
+}
+
+.top-content-right {
+  margin-left: auto;
+  position: relative;
+}
+
+.top-before {
+  border-right: 1px solid gray;
+  height: 22px;
+  position: absolute;
+  left: 40px;
+  top: -1px;
+}
+
+.banner {
+  width: var(--width);
+  height: 270px;
+  margin: 0px 5px;
+  border: 1px solid #ccc;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom: none;
+}
+
+.banner img {
+  width: var(--width);
+  height: 200px;
+  background: #ccc;
+  margin: -1px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+}
+
+.banner-content {
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+}
+
+.banner-content h4 {
+  font-size: 18px;
+  padding-bottom: 5px;
+}
+
+.banner-content p {
+  color: gray;
+  font-size: 14px;
+}
+
+.direct {
+  height: 80px;
+  width: var(--width);
+  margin: 0px 5px;
+}
+
+.direct-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: var(--primary);
+  border: 1px solid #ccc;
+  border-bottom: none;
+}
+
+.direct-item-icon {
+  width: 36px;
+  height: 36px;
+  margin: auto;
+  border: 1px solid var(--primary);
+  border-radius: 50px;
+  position: relative;
+}
+
+.direct-item-icon i {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+
+.direct-item p {
+  text-align: center;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.content {
+  width: var(--width);
+  height: 190px;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  margin: 0px 5px;
+}
+
+.content-list {
+  width: 100%;
+  height: 135px;
+}
+
+.content-item {
+  padding: 10px 15px;
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+
+.content-item i {
+  margin-right: 15px;
+  color: var(--primary);
+}
+
+.content-item-decs {
+  color: rgb(67, 64, 64);
+}
+
+.content-item-date {
+  font-weight: bold;
+}
+
+.content-update {
+  width: 50%;
+  height: 35px;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  font-size: 14px;
+}
+
+.content-update i {
+  color: var(--primary);
+  margin: 5px 10px;
+}
+
+.info {
+  width: var(--width);
+  height: 440px;
+  margin: 0px 5px;
+}
+
+.info-list {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ccc;
+}
+
+.info-item {
+  width: 100%;
+  height: 25%;
+  align-items: center;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.info-item img {
+  width: 64px;
+  height: 64px;
+  background-color: #ccc;
+  margin: 0px 10px;
+}
+
+.info-title {
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.info-desc {
+  font-size: 14px;
+}
+
+.toggle {
+  height: 50px;
+  width: 15px;
+  position: absolute;
+  top: 5px;
+  left: 375px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: linear 0.2s;
+}
+
+.toggle i {
+  color: gray;
+}
+
+.toggle.active {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: linear 0.2s;
+}
+
+.toggle.active .left {
+  display: none;
+}
+
+.toggle .right {
+  display: none;
+}
+
+.toggle.active .right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
